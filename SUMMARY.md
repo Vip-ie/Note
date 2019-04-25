@@ -11,6 +11,7 @@
     * [创建与删除数据库](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku.md)
     * [创建与删除数据库表](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku-biao.md)
     * [单表中数据的 增、删、查、改](database/mysql/dan-biao-zhong-shu-ju-de-zeng-3001-shan-3001-cha-3001-gai.md)
+    * [MySQL数据类型](database/mysql/mysqlshu-ju-lei-xing.md)
   * [MongoDB](database/mongodb.md)
   * [Redis](database/redis.md)
   * [SQLAlchemy](database/sqlalchemy.md)
