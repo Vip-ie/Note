@@ -45,10 +45,10 @@
       * [数值类型](python/pythonji-chu/shu-ju-lei-xing/shu-zhi-lei-xing.md)
       * [字符串](python/pythonji-chu/shu-ju-lei-xing/zi-fu-chuan.md)
       * [列表](python/pythonji-chu/shu-ju-lei-xing/lie-biao.md)
-      * 元组
-      * 集合
-      * 字典
-      * 逻辑运算符
+      * [元组](python/pythonji-chu/shu-ju-lei-xing/yuan-zu.md)
+      * [集合](python/pythonji-chu/shu-ju-lei-xing/ji-he.md)
+      * [字典](python/pythonji-chu/shu-ju-lei-xing/zi-dian.md)
+      * [逻辑运算符](python/pythonji-chu/shu-ju-lei-xing/luo-ji-yun-suan-fu.md)
     * 控制流程
     * [函数](python/pythonji-chu/han-shu.md)
     * [类](python/pythonji-chu/lei.md)
