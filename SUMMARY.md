@@ -7,6 +7,7 @@
   * [Ubuntu](system/ubuntu.md)
 * [Database](database.md)
   * [Mysql](database/mysql.md)
+    * [基础](database/mysql/ji-chu.md)
     * [登录Mysql](database/mysql/deng-lu-mysql.md)
     * [创建与删除数据库](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku.md)
     * [创建与删除数据库表](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku-biao.md)
@@ -15,7 +16,7 @@
     * 练习题
     * 表约束
     * 表关系
-    * 表查询
+    * [表查询](database/mysql/biao-cha-xun.md)
     * [Python操作mysql](database/mysql/pythoncao-zuo-mysql.md)
     * [事务](database/mysql/shi-wu.md)
   * [MongoDB](database/mongodb.md)
