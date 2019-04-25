@@ -20,7 +20,7 @@
       * [主键约束](database/mysql/biao-yue-shu/zhu-jian-yue-shu.md)
       * [自增长](database/mysql/biao-yue-shu/zi-zeng-chang.md)
       * [默认约束](database/mysql/biao-yue-shu/mo-ren-yue-shu.md)
-      * 外键约束
+      * [外键约束](database/mysql/biao-yue-shu/wai-jian-yue-shu.md)
     * 表关系
     * [表查询](database/mysql/biao-cha-xun.md)
     * [Python操作mysql](database/mysql/pythoncao-zuo-mysql.md)
