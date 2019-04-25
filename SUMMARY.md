@@ -21,7 +21,11 @@
       * [自增长](database/mysql/biao-yue-shu/zi-zeng-chang.md)
       * [默认约束](database/mysql/biao-yue-shu/mo-ren-yue-shu.md)
       * [外键约束](database/mysql/biao-yue-shu/wai-jian-yue-shu.md)
-    * 表关系
+    * [表关系](database/mysql/biao-guan-xi.md)
+      * [一对一关系](database/mysql/biao-guan-xi/yi-dui-yi-guan-xi.md)
+      * [一对多关系](database/mysql/biao-guan-xi/yi-dui-duo-guan-xi.md)
+      * [多对多关系](database/mysql/biao-guan-xi/duo-dui-duo-guan-xi.md)
+      * [练习题](database/mysql/biao-guan-xi/lian-xi-ti.md)
     * [表查询](database/mysql/biao-cha-xun.md)
     * [Python操作mysql](database/mysql/pythoncao-zuo-mysql.md)
     * [事务](database/mysql/shi-wu.md)
