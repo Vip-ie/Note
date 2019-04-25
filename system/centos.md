@@ -1,4 +1,4 @@
-# [CentOS 7.4 安装python3及虚拟环境](https://www.centos.bz/2018/05/centos-7-4-安装python3及虚拟环境/)
+# CentOS 7.4 安装python3及虚拟环境
 
 [https://www.centos.bz/2018/05/centos-7-4-%E5%AE%89%E8%A3%85python3%E5%8F%8A%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/](https://www.centos.bz/2018/05/centos-7-4-安装python3及虚拟环境/)
 
