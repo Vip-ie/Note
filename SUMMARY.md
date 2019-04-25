@@ -62,6 +62,17 @@
       * [递归函数](python/pythonji-chu/han-shu/di-gui-han-shu.md)
       * [迭代器](python/pythonji-chu/han-shu/die-dai-qi.md)
     * [类](python/pythonji-chu/lei.md)
+      * 类定义
+      * 类方法
+      * 类初始化和析构
+      * 继承
+      * 多继承
+      * 魔术方法
+      * 单例模式
+      * 定制属性
+      * 描述符
+      * 装饰器
+      * 生成器
     * [文件](python/pythonji-chu/wen-jian.md)
     * [异常](python/pythonji-chu/yi-chang.md)
     * [正则](python/pythonji-chu/zheng-ze.md)
