@@ -62,17 +62,17 @@
       * [递归函数](python/pythonji-chu/han-shu/di-gui-han-shu.md)
       * [迭代器](python/pythonji-chu/han-shu/die-dai-qi.md)
     * [类](python/pythonji-chu/lei.md)
-      * 类定义
-      * 类方法
-      * 类初始化和析构
-      * 继承
-      * 多继承
-      * 魔术方法
-      * 单例模式
-      * 定制属性
-      * 描述符
-      * 装饰器
-      * 生成器
+      * [类定义](python/pythonji-chu/lei/lei-ding-yi.md)
+      * [类方法](python/pythonji-chu/lei/lei-fang-fa.md)
+      * [类初始化和析构](python/pythonji-chu/lei/lei-chu-shi-hua-he-xi-gou.md)
+      * [继承](python/pythonji-chu/lei/ji-cheng.md)
+      * [多继承](python/pythonji-chu/lei/duo-ji-cheng.md)
+      * [魔术方法](python/pythonji-chu/lei/mo-zhu-fang-fa.md)
+      * [单例模式](python/pythonji-chu/lei/dan-li-mo-shi.md)
+      * [定制属性](python/pythonji-chu/lei/ding-zhi-shu-xing.md)
+      * [描述符](python/pythonji-chu/lei/miao-shu-fu.md)
+      * [装饰器](python/pythonji-chu/lei/zhuang-shi-qi.md)
+      * [生成器](python/pythonji-chu/lei/sheng-cheng-qi.md)
     * [文件](python/pythonji-chu/wen-jian.md)
     * [异常](python/pythonji-chu/yi-chang.md)
     * [正则](python/pythonji-chu/zheng-ze.md)
