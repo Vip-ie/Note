@@ -85,6 +85,8 @@ Decimal('0.2')
 
 **Python中总共有多少数值类型？**
 
+![](/assets/shujuleixing.jpg)
+
 ```py
 布尔型 主要是用来判断对错的
 >>> a = True
