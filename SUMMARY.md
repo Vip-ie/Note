@@ -17,7 +17,7 @@
     * 表关系
     * 表查询
     * [Python操作mysql](database/mysql/pythoncao-zuo-mysql.md)
-    * 事务
+    * [事务](database/mysql/shi-wu.md)
   * [MongoDB](database/mongodb.md)
   * [Redis](database/redis.md)
   * [SQLAlchemy](database/sqlalchemy.md)
