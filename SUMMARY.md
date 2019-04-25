@@ -43,8 +43,8 @@
   * [Python基础](python/pythonji-chu.md)
     * [数据类型](python/pythonji-chu/shu-ju-lei-xing.md)
       * [数值类型](python/pythonji-chu/shu-ju-lei-xing/shu-zhi-lei-xing.md)
-      * 字符串
-      * 列表
+      * [字符串](python/pythonji-chu/shu-ju-lei-xing/zi-fu-chuan.md)
+      * [列表](python/pythonji-chu/shu-ju-lei-xing/lie-biao.md)
       * 元组
       * 集合
       * 字典
