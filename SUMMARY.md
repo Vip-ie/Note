@@ -10,5 +10,6 @@
   * [MongoDB](database/mongodb.md)
   * [Redis](database/redis.md)
 * Python
-* Tools
+* [Tools](tools.md)
+  * [Pycharm\_and\_Git](tools/pycharmand-git.md)
 
