@@ -14,7 +14,13 @@
       * [单表中数据的 增、删、查、改](database/mysql/ji-chu/dan-biao-zhong-shu-ju-de-zeng-3001-shan-3001-cha-3001-gai.md)
       * [MySQL数据类型](database/mysql/ji-chu/mysqlshu-ju-lei-xing.md)
       * [练习题](database/mysql/ji-chu/lian-xi-ti.md)
-    * 表约束
+    * [表约束](database/mysql/biao-yue-shu.md)
+      * [非空约束](database/mysql/biao-yue-shu/fei-kong-yue-shu.md)
+      * [唯一约束](database/mysql/biao-yue-shu/wei-yi-yue-shu.md)
+      * [主键约束](database/mysql/biao-yue-shu/zhu-jian-yue-shu.md)
+      * [自增长](database/mysql/biao-yue-shu/zi-zeng-chang.md)
+      * [默认约束](database/mysql/biao-yue-shu/mo-ren-yue-shu.md)
+      * 外键约束
     * 表关系
     * [表查询](database/mysql/biao-cha-xun.md)
     * [Python操作mysql](database/mysql/pythoncao-zuo-mysql.md)
