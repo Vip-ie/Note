@@ -9,6 +9,7 @@
   * [Mysql](database/mysql.md)
     * [基础](database/mysql/ji-chu.md)
     * [登录Mysql](database/mysql/deng-lu-mysql.md)
+    * [创建与删除数据库](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku.md)
   * [MongoDB](database/mongodb.md)
   * [Redis](database/redis.md)
   * [SQLAlchemy](database/sqlalchemy.md)
