@@ -41,6 +41,13 @@
     * [多表查询](database/sqlalchemy/duo-biao-cha-xun.md)
 * [Python](python.md)
   * [Python基础](python/pythonji-chu.md)
+    * 数据类型
+    * 控制流程
+    * [函数](python/pythonji-chu/han-shu.md)
+    * [类](python/pythonji-chu/lei.md)
+    * [文件](python/pythonji-chu/wen-jian.md)
+    * [异常](python/pythonji-chu/yi-chang.md)
+    * [正则](python/pythonji-chu/zheng-ze.md)
   * [Python模块](python/pythonmo-kuai.md)
   * [PythonWeb](python/pythonweb.md)
   * [Python基础爬虫](python/pythonji-chu-pa-chong.md)
