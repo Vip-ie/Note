@@ -8,6 +8,7 @@
 * [Database](database.md)
   * [Mysql](database/mysql.md)
     * [基础](database/mysql/ji-chu.md)
+      * [登录Mysql](database/mysql/ji-chu/deng-lu-mysql.md)
     * [登录Mysql](database/mysql/deng-lu-mysql.md)
     * [创建与删除数据库](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku.md)
     * [创建与删除数据库表](database/mysql/chuang-jian-yu-shan-chu-shu-ju-ku-biao.md)
