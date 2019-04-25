@@ -12,7 +12,7 @@
       * [创建与删除数据库](database/mysql/ji-chu/chuang-jian-yu-shan-chu-shu-ju-ku.md)
       * [创建与删除数据库表](database/mysql/ji-chu/chuang-jian-yu-shan-chu-shu-ju-ku-biao.md)
       * [单表中数据的 增、删、查、改](database/mysql/ji-chu/dan-biao-zhong-shu-ju-de-zeng-3001-shan-3001-cha-3001-gai.md)
-      * [MySQL数据类型](database/mysql/mysqlshu-ju-lei-xing.md)
+      * [MySQL数据类型](database/mysql/ji-chu/mysqlshu-ju-lei-xing.md)
       * [练习题](database/mysql/ji-chu/lian-xi-ti.md)
     * 表约束
     * 表关系
