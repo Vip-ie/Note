@@ -9,7 +9,16 @@
   * [Mysql](database/mysql.md)
   * [MongoDB](database/mongodb.md)
   * [Redis](database/redis.md)
-* Python
+* [Python](python.md)
+  * [Python基础](python/pythonji-chu.md)
+  * [Python模块](python/pythonmo-kuai.md)
+  * [PythonWeb](python/pythonweb.md)
+  * [Python基础爬虫](python/pythonji-chu-pa-chong.md)
+  * [Python高级爬虫](python/pythongao-ji-pa-chong.md)
+  * [Tornado框架](python/tornadokuang-jia.md)
+  * [Tornado项目](python/tornadoxiang-mu.md)
+  * [Django框架](python/djangokuang-jia.md)
+  * [Django项目](python/djangoxiang-mu.md)
 * [Tools](tools.md)
   * [Pycharm\_and\_Git](tools/pycharmand-git.md)
 
