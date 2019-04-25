@@ -2,11 +2,13 @@
 
 ##### 创建表 语法
 
-##### create table \[if not exists\] table\_name\(
+```
+create table [if not exists] table_name(
+                                        column_name data_type,
+                                        );
+```
 
-##### column\_name data\_type,
-
-##### \);
+##### 
 
 ```
 mysql> create table if not exists student(
