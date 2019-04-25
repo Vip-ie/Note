@@ -1,11 +1,12 @@
-# MacOSX 安装python虚拟环境
+## MacOSX 安装python虚拟环境
 
-python3安装
+### python3安装
 
 官方下载python3安装包
 
+https://www.python.org/downloads/
+
 ```
-pip3 install virtualenv
 pip3 install virtualenvwrapper
 ```
 
