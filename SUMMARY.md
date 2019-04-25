@@ -49,7 +49,9 @@
       * [集合](python/pythonji-chu/shu-ju-lei-xing/ji-he.md)
       * [字典](python/pythonji-chu/shu-ju-lei-xing/zi-dian.md)
       * [逻辑运算符](python/pythonji-chu/shu-ju-lei-xing/luo-ji-yun-suan-fu.md)
-    * 控制流程
+    * [控制流程](python/pythonji-chu/kong-zhi-liu-cheng.md)
+      * [判断](python/pythonji-chu/kong-zhi-liu-cheng/pan-duan.md)
+      * [循环](python/pythonji-chu/kong-zhi-liu-cheng/xun-huan.md)
     * [函数](python/pythonji-chu/han-shu.md)
     * [类](python/pythonji-chu/lei.md)
     * [文件](python/pythonji-chu/wen-jian.md)
