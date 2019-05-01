@@ -8,7 +8,7 @@ http://www.sublimetext.com/3
 
 ## [Sublime Text3的插件管理Package Control安装](https://packagecontrol.io)
 
-Sublime Text 3安装Package Control
+Sublime Text 3手动安装Package Control
 
 ![](/assets/PackageControl.png)![](/assets/Package Control1.png)![](/assets/Package Control2.png)![](/assets/Package Control3.png)
 
