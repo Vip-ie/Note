@@ -5,6 +5,7 @@
   * [MacOSX](system/macosx.md)
   * [CentOS](system/centos.md)
   * [Ubuntu](system/ubuntu.md)
+    * [UbuntuServer分辨率修改](system/ubuntu/ubuntuserver.md)
 * [Database](database.md)
   * [Mysql](database/mysql.md)
     * [基础](database/mysql/ji-chu.md)
