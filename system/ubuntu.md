@@ -35,6 +35,7 @@ Virtaulenvwrapper是virtualenv的扩展包，用于更方便管理虚拟环境�
 
 ```
 pip3 install virtualenv
+pip3 install setuptools #安装这个包才能安装 virtualenvwrapper包
 pip3 install virtualenvwrapper
 ```
 
