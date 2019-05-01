@@ -10,7 +10,7 @@ http://www.sublimetext.com/3
 
 Sublime Text 3手动安装Package Control
 
-Package Control下载地址[https://github.com/Vip-ie/PackageControl](https://github.com/Vip-ie/PackageControl)![](/assets/PackageControl.png)![](/assets/Package Control1.png)![](/assets/Package Control2.png)![](/assets/Package Control3.png)
+Package Control下载地址[https://github.com/Vip-ie/PackageControl](https://github.com/Vip-ie/PackageControl)![](/assets/PackageControl.png)![](/assets/Package Control1.png)![](/assets/Package Control2.png)
 
 #### Package Control 安装成功的验证
 
