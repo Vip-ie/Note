@@ -27,11 +27,13 @@ vga参数表
 
 执行命令： `sudo reboot`
 
+---
+
 ## Ubuntu 换国内源 中科大源 阿里源 163源 清华源
 
-国内有很多Ubuntu的镜像源，包括阿里的、网易的，还有很多教育网的源，比如：清华源、中科大源。 
+国内有很多Ubuntu的镜像源，包括阿里的、网易的，还有很多教育网的源，比如：清华源、中科大源。
 
-我们这里以中科大的源为例讲解如何修改Ubuntu里面默认的源。 
+我们这里以中科大的源为例讲解如何修改Ubuntu里面默认的源。
 
 编辑`/etc/apt/sources.list`文件, 在文件最前面添加以下条目\(操作前请做好相应备份\)：
 
@@ -86,8 +88,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-
-
 ```
 
 
