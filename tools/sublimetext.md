@@ -20,5 +20,9 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 安装完毕后,重启sublime，此时就可以在Preferences菜单下看到Package Settings和Package Control两个菜单了。
 
+#### Package Control 安装成功的验证
+
+按住Ctrl + shift + p，输入pci你能看到如下界面，就说明你Package Control 安装成功了！
+
 
 
