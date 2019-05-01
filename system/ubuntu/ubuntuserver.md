@@ -1,4 +1,4 @@
-# UbuntuServer分辨率修改
+## UbuntuServer分辨率修改
 
 **修改Ubuntu Server的分辨率，其实就是找到关键的文件，然后修改参数，重启一下，就可以看见效果了。**
 
