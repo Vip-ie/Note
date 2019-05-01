@@ -24,9 +24,7 @@ Package Control下载地址[https://github.com/Vip-ie/PackageControl](https://gi
 
 按住Ctrl + shift + p，输入pci你能看到如下界面，就说明你Package Control 安装成功了！
 
-
-
-### 
+### Mac SublimeText3 Python环境配置
 
 
 
