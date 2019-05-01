@@ -14,10 +14,11 @@ Sublime Text 3安装Package Control命令
 
 ```
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-
 ```
 
 按下enter键,稍等即可,
 
 安装完毕后,重启sublime，此时就可以在Preferences菜单下看到Package Settings和Package Control两个菜单了。
+
+
 
