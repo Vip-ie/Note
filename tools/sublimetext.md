@@ -26,5 +26,13 @@ Package Control下载地址[https://github.com/Vip-ie/PackageControl](https://gi
 
 ### Mac SublimeText3 Python环境配置
 
+**SublimeText3 常用命令**
 
+```
+install package 进入安装插件目录
+list packages   列出已安装插件
+remove package  进入删除插件目录
+```
+
+SideBarEnhancements
 
