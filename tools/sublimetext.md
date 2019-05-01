@@ -15,7 +15,7 @@ http://www.sublimetext.com/3
 Package Control下载地址[https://github.com/Vip-ie/PackageControl](https://github.com/Vip-ie/PackageControl)
 
 ```
-链接: https://pan.baidu.com/s/1xGT4r7sxcAm7JUMHbNsKxA 提取码: kgu3 
+链接: https://pan.baidu.com/s/1xGT4r7sxcAm7JUMHbNsKxA 提取码: kgu3
 ```
 
 ![](/assets/PackageControl0.jpg)![](/assets/Package-Control1.jpg)![](/assets/Package-Control2.jpg)
@@ -23,4 +23,10 @@ Package Control下载地址[https://github.com/Vip-ie/PackageControl](https://gi
 **Package Control 安装成功的验证**
 
 按住Ctrl + shift + p，输入pci你能看到如下界面，就说明你Package Control 安装成功了！
+
+
+
+### 
+
+
 
