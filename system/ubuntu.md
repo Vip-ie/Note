@@ -25,6 +25,12 @@
 sudo apt install python3-pip
 ```
 
+**PIP3 查看已安装工具包安装路径方法**
+
+```
+pip3 show 需要查看的工具包名称
+```
+
 **安装virtualenv和virutalenvwrapper**
 
 Virtaulenvwrapper是virtualenv的扩展包，用于更方便管理虚拟环境，它可以方便实现以下功能：
