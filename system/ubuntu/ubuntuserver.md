@@ -38,28 +38,19 @@ vga参数表
 编辑`/etc/apt/sources.list`文件, 在文件最前面添加以下条目\(操作前请做好相应备份\)：
 
 ```
-##中科大源
-
+中科大源
 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
 deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
 ```
 
+```
 然后执行命令：
-
-```
 sudo apt-get update
 sudo apt-get upgrade
 ```
-
-其他几份国内源如下：
 
 #### 阿里源 {#阿里源}
 
