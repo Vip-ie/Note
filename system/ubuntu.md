@@ -51,7 +51,7 @@ pip3 install virtualenvwrapper
 
 * **在~/.bashrc中添加行**
 
-使用`find -name +查找文件名字` 查找路径
+使用`find -name +查找文件名字` 查找路径  `whereis virtualenvwrapper.sh`
 
 `vi ~/.bashrc`最后插入如下代码：
 
