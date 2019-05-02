@@ -52,10 +52,11 @@
 
 ### 2.下载Python3安装包 {#2.下载Python3安装包}
 
-大家可根据自己需求下载不同版本的Python3，我下载的是Python3.6.2
+大家可根据自己需求下载不同版本的Python3，我下载的是Python3.7.0
 
 ```
-# wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz
+wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
+tar -xvJf  Python-3.7.0.tar.xz
 ```
 
 ### 3. 新建python3存放目录 {#3. 新建python3存放目录}
@@ -69,10 +70,10 @@
 解压压缩包，进入解压目录，指定安装目录，安装Python3。
 
 ```
-# tar -xvJf  Python-3.6.2.tar.xz
-# cd Python-3.6.2
-# ./configure --prefix=/usr/local/python3
-# make && make install
+mkdir /usr/local/python3 #创建编译安装目录
+cd Python-3.7.0
+./configure --prefix=/usr/local/python3
+make && make install
 ```
 
 安装Python3时，会自动安装pip。假如没有，需要自己手动安装。
