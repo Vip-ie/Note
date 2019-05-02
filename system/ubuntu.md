@@ -49,12 +49,6 @@ pip3 install virtualenvwrapper
 
 此时还不能使用virtualenvwrapper，默认virtualenvwrapper安装在/usr/local/bin下面，实际上需要运行virtualenvwrapper.sh文件才行。修改~/.bashrc，添加以下语句
 
-* **创建目录用来存放虚拟环境**
-
-```
-sudo mkdir $HOME/.virtualenvs
-```
-
 * **在~/.bashrc中添加行**
 
 使用`find -name +查找文件名字` 查找路径
@@ -64,7 +58,6 @@ sudo mkdir $HOME/.virtualenvs
 ```
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv
 source ~/.local/bin/virtualenvwrapper.sh
 ```
 
