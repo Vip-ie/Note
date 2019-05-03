@@ -45,9 +45,9 @@ files = /super/*.conf #这里是添加的项目运行配置文件目录
 
 ```
   ├── deploy
-  │   ├── super
-  │   │   └── tornado1.ini
-  │   └── supervisord.conf
+  │   ├── super
+  │   │   └── tornado1.ini
+  │   └── supervisord.conf
 ```
 
 * tornado1.ini文件内如如下
@@ -109,7 +109,7 @@ loglevel = info
 
 一定要先启动 daemon 程序 \(supervisord\) 才能执行管理操作，否则会报错
 
-> 使用默认的主配置文件 /etc/supervisor/supervisord.conf 
+> 使用默认的主配置文件 /etc/supervisor/supervisord.conf
 >
 > **sudo supervisord**明确指定主配置文件sudo supervisord -c /home/pyvip/working/supervisord.conf
 >
@@ -128,19 +128,19 @@ loglevel = info
 > tornadoes:tornado-8001 RUNNING pid 17653, uptime 0:00:28
 >
 > tornadoes:tornado-8002 RUNNING pid 17654, uptime 0:00:28
-
+>
 > \#停止运行tornado-8001服务器进程
 >
 > supervisor&gt; stop tornadoes:tornado-8001
 >
 > tornados:tornado-8001: stopped
-
+>
 > \#停止运行整个tornado服务器进程组
 >
 > supervisor&gt; stop tornadoes:
 >
 > tornadoes:tornado-8000: stopped
-
+>
 > tornadoes:tornado-8001: stopped
 >
 > tornadoes:tornado-8002: stopped
@@ -186,6 +186,59 @@ loglevel = info
 > 根据最新的配置文件，启动新配置或有改动的进程，配置没有改动的进程不会受影响而重启
 >
 > supervisorctl update
+
+---
+
+### nginx 配置文件
+
+主配置文件是`/etc/nginx/nginx.conf`
+
+**项目对应的配置文件放到`/etc/nginx/conf.d/`或者`/etc/nginx/sites-enabled/`**
+
+比如 tudo\_nginx 文件
+
+```
+upstream tornadoes{
+    server 127.0.0.1:8000;   # 本地访问，只用 127.0.0.1
+    server 127.0.0.1:8001;
+    server 127.0.0.1:8002;
+}
+
+proxy_next_upstream error;
+
+server {
+    listen 8888;   # 一般是 80
+    server_name 127.0.0.1; # 根据实际情况填写对应ip
+
+    location /{
+        proxy_pass_header Server;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        # 把请求方向代理传给tornado服务器，负载均衡
+        proxy_pass http://tornadoes;
+    }
+}
+```
+
+### 常见问题
+
+1. Linux 目录和文件的操作
+
+2. 命令的输入 tab 键补全的操作
+
+3. 按文档操作的顺序 （supervisord 没有启动的报错）
+
+4. supervisor 的 web 管理界面
+
+5. 配置文件修改定制应用的套路
+
+6. nginx 配置解释，conf 文件的作用
+
+7. vim 的使用和 sudo
+
+8. 为什么要用 nginx
 
 
 
