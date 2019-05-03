@@ -26,7 +26,7 @@ pip install git+https://github.com/Supervisor/supervisor.git
 ```
 
 * 检查主配置文件 /etc/supervisor/supervisord.conf （如果目录不存在需要创建）
-* 使用命令生成一个**主服务配置文件**`echo_supervisord_conf > deploy/supervisord.conf`（如果没有 deploy 目录就建立）
+* 使用命令生成一个**主服务配置文件**`echo_supervisord_conf > deploy/supervisord.conf`（在项目根目录建立 deploy 建立）
 
 检查是否 inculde 配置，没有就加上
 
@@ -40,8 +40,6 @@ files = /etc/supervisor/conf.d/*.conf
 `sudo cp deploy/supervisord.conf /etc/supervisor/supervisord.conf`过去
 
 * 增加 Supervisor 项目运行配置文件（名字如 tudo\_super.conf）到 /etc/supervisor/conf.d
-
-
 
 ```ini
 # 增加一个tornadoes组
