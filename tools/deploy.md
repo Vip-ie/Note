@@ -13,8 +13,16 @@
 
 ### 安装Supervisor（如果用pip安装注意看是否需要指定使用python2版本）
 
+supervisor默认只支持Python2
+
 ```bash
 sudo apt-get install supervisor
+```
+
+或者激活Python3的vritualenv后执行，安装支持Python3版本的supervisor
+
+```
+pip install git+https://github.com/Supervisor/supervisor.git
 ```
 
 * 检查主配置文件 /etc/supervisor/supervisord.conf （如果目录不存在需要创建）
