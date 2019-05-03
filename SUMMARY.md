@@ -99,5 +99,6 @@
 * [Tools](tools.md)
   * [Pycharm\_and\_Git](tools/pycharmand-git.md)
   * [SublimeText](tools/sublimetext.md)
+  * [deploy](tools/deploy.md)
 * [项目](xiang-mu.md)
 
