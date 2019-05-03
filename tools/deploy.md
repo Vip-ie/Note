@@ -189,11 +189,18 @@ loglevel = info
 
 ---
 
+### 安装和运行
+
+* 安装` sudo apt-get install nginx`
+* 检测配置文件正确可用 `sudo nginx -t`
+* 运行 `sudo nginx`
+* 修改或增加了配置文件后重启  `sudo nginx -s reload`
+
 ### nginx 配置文件
 
 主配置文件是`/etc/nginx/nginx.conf`
 
-**项目对应的配置文件放到`/etc/nginx/conf.d/`或者`/etc/nginx/sites-enabled/`**
+**项目对应的配置文件放到**`/etc/nginx/conf.d/`**或者**`/etc/nginx/sites-enabled/`
 
 比如 tudo\_nginx 文件
 
