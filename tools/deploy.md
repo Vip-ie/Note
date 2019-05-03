@@ -191,7 +191,7 @@ loglevel = info
 
 ### 安装和运行
 
-* 安装` sudo apt-get install nginx`
+* 安装`sudo apt-get install nginx`
 * 检测配置文件正确可用 `sudo nginx -t`
 * 运行 `sudo nginx`
 * 修改或增加了配置文件后重启  `sudo nginx -s reload`
