@@ -21,27 +21,36 @@ supervisor默认只支持Python2
 sudo apt-get install supervisor
 ```
 
-或者激活Python3的vritualenv后执行，安装支持Python3版本的supervisor
+或者激活Python3的vritualenv后执行，进入项目根目录安装支持Python3版本的supervisor
 
 ```
 pip install git+https://github.com/Supervisor/supervisor.git
 ```
 
-* 检查主配置文件 /etc/supervisor/supervisord.conf （如果目录不存在需要创建）
-* 使用命令生成一个**主服务配置文件**`echo_supervisord_conf > deploy/supervisord.conf`（在项目根目录建立 deploy 建立）
+supervisor安装完成后，在项目根目录下有一个 `echo_supervisord_conf`文件
 
-检查是否 inculde 配置，没有就加上
+* 检查主配置文件 /etc/supervisor/supervisord.conf （如果在目录不存在需要创建）
+* 使用命令生成一个**主服务配置文件** 项目目录执行`echo_supervisord_conf > deploy/supervisord.conf`（在项目根目录建立 deploy 建立）编辑deploy/supervisord.conf文件检查是否 inculde 配置，没有就加上
 
 ```
 [include]
-files = /etc/supervisor/conf.d/*.conf
+files = /super/*.conf #这里是添加的项目运行配置文件目录
 ```
 
 如果 sudo 没有权限就用当前目录生成，然后
 
 `sudo cp deploy/supervisord.conf /etc/supervisor/supervisord.conf`过去
 
-* 增加 Supervisor 项目运行配置文件（名字如 tudo\_super.conf）到 /etc/supervisor/conf.d
+* 在deploy目录下增加 Supervisor 项目运行配置文件（名字如 tornado1.ini）到 /etc/supervisor/conf.d
+
+```
+  ├── deploy
+  │   ├── super
+  │   │   └── tornado1.ini
+  │   └── supervisord.conf
+```
+
+* tornado1.ini文件内如如下
 
 ```ini
 # 增加一个tornadoes组
@@ -93,6 +102,90 @@ stdout_logfile_backups = 20
 stdout_logfile = /tmp/tornado_app_8002.log
 loglevel = info
 ```
+
+### 启动和管理
+
+##### 启动supervisor
+
+一定要先启动 daemon 程序 \(supervisord\) 才能执行管理操作，否则会报错
+
+> 使用默认的主配置文件 /etc/supervisor/supervisord.conf 
+>
+> **sudo supervisord**明确指定主配置文件sudo supervisord -c /home/pyvip/working/supervisord.conf
+>
+> 使用 user 用户启动supervisord
+>
+> sudo supervisord -u user
+
+##### 查看、操作进程状态
+
+> **\(tornado\) pyvip@Vip:~/ws/tudo$ sudo supervisorctl**
+>
+> \[sudo\] password for pyvip:
+>
+> tornadoes:tornado-8000 RUNNING pid 17652, uptime 0:00:28
+>
+> tornadoes:tornado-8001 RUNNING pid 17653, uptime 0:00:28
+>
+> tornadoes:tornado-8002 RUNNING pid 17654, uptime 0:00:28
+
+> \#停止运行tornado-8001服务器进程
+>
+> supervisor&gt; stop tornadoes:tornado-8001
+>
+> tornados:tornado-8001: stopped
+
+> \#停止运行整个tornado服务器进程组
+>
+> supervisor&gt; stop tornadoes:
+>
+> tornadoes:tornado-8000: stopped
+
+> tornadoes:tornado-8001: stopped
+>
+> tornadoes:tornado-8002: stopped
+>
+> supervisor&gt; status
+>
+> tornadoes:tornado-8000 STOPPED Jun 26 07:43 PM
+>
+> tornadoes:tornado-8001 STOPPED Jun 26 07:43 PM
+>
+> tornadoes:tornado-8002 STOPPED Jun 26 07:43 PM
+
+##### supervisorctl 命令介绍
+
+> 停止某一个进程，program\_name 为 \[program:x\] 里的 x
+>
+> supervisorctl stop program\_name
+>
+> 启动某个进程
+>
+> supervisorctl start program\_name
+>
+> 重启某个进程
+>
+> supervisorctl restart program\_name
+>
+> 结束所有属于名为 groupworker 这个分组的进程 \(start，restart 同理\)
+>
+> supervisorctl stop groupworker:
+>
+> 结束 groupworker:name1 这个进程 \(start，restart 同理\)
+>
+> supervisorctl stop groupworker:name1
+>
+> 停止全部进程，注：start、restart、stop 都不会载入最新的配置文件
+>
+> supervisorctl stop all
+>
+> 载入最新的配置文件，停止原有进程并按新的配置启动、管理所有进程
+>
+> supervisorctl reload
+>
+> 根据最新的配置文件，启动新配置或有改动的进程，配置没有改动的进程不会受影响而重启
+>
+> supervisorctl update
 
 
 
