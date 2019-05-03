@@ -11,5 +11,11 @@
 
 ## 使用Supervisor监控Tornado进程
 
+### 安装Supervisor（如果用pip安装注意看是否需要指定使用python2版本）
+
+```bash
+sudo apt-get install supervisor
+```
+
 
 
