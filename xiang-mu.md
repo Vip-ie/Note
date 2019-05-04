@@ -21,3 +21,26 @@
 
 
 
+
+
+项目目录
+
+```
+Module
+    ├── alembic              #数据库版本控制
+    ├── app.py 
+    ├── deploy               #维护文件
+    ├── handlers             #总路由函数入口
+    │   └── __init__.py
+    ├── Modules              #数据库相关函数建模
+    │   └── __init__.py
+    ├── requirements.txt
+    ├── templates            #模板相关
+    │   └── static
+    └── utils                #辅助函数
+        └── __init__.py
+
+```
+
+
+
