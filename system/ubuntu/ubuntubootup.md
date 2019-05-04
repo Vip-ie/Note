@@ -5,19 +5,31 @@ ubuntu-18.04不能像ubuntu14一样通过编辑rc.local来设置开机启动脚�
 #### 1. 建立rc-local.service文件
 
 ```
-sudo vi /etc/systemd/system/rc-local.service
+sudo vi /etc/systemd/system/rc.local.service
 ```
 
 #### 2. 将下列内容复制进rc-local.service文件
 
 ```
+#  SPDX-License-Identifier: LGPL-2.1+
+# 
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+
+# This unit gets pulled automatically into multi-user.target by
+# systemd-rc-local-generator if /etc/rc.local is executable.
+
 [Unit]
-Description=/etc/rc.local Compatibility
-ConditionPathExists=/etc/rc.local
+Description=/etc/rc.local Compatibility
+ConditionFileIsExecutable=/etc/rc.local
 
 [Service]
 Type=forking
-ExecStart=/etc/rc.local start
+ExecStart=/etc/rc.local start
 TimeoutSec=0
 StandardOutput=tty
 RemainAfterExit=yes
@@ -48,8 +60,8 @@ sudo vi /etc/rc.local
 # bits.
 #
 # By default this script does nothing.
-echo "看到这行字，说明添加自启动脚本成功。" > /usr/local/test.log
-exit 0
+echo "看到这行字，说明添加自启动脚本成功。" > /usr/local/test.log
+exit 0
 ```
 
 #### 5. 给rc.local加上权限
