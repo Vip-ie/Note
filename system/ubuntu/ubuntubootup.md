@@ -83,7 +83,15 @@ sudo systemctl start rc-local.service
 sudo systemctl status rc-local.service
 ```
 
-#### 8. 重启并检查test.log文件
+#### 8. 创建软链接
+
+做完这一步，还需要最后一步 前面我们说 systemd 默认读取 /etc/systemd/system 下的配置文件, 所以还需要在 /etc/systemd/system 目录下创建软链接
+
+```
+ln -s /lib/systemd/system/rc.local.service /etc/systemd/system/ 
+```
+
+#### 9. 重启并检查test.log文件
 
 ```
 cat /usr/local/test.log
