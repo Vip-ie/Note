@@ -144,5 +144,101 @@ export PATH=".git/safe/../../bin:$PATH"
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 ```
 
+### 好用的编辑器 Vim
+
+对于Vim，无需溢美之词，作为与emacs并列的两大编辑器，早已经被无数人奉为经典。而它却 又以超长的学习曲线，使得很多人望而却步。长久以来，虽然拥有大量的插件，却缺少一个 确之有效的插件管理器。所幸，`Vundle`的出现解决了这个问题。
+
+`Vundle`可以让你在配置文件中管理插件，并且非常方便的查找、安装、更新或者删除插件。 还可以帮你自动配置插件的执行路径和生成帮助文件。相对于另外一个管理工具`pathogen`， 可以说有着巨大的优势。
+
+```
+# vundle 安装和配置
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+```
+" 将下面配置文件加入到.vimrc文件中
+set nocompatible " 必须
+filetype off     " 必须
+
+" 将Vundle加入运行时路径中(Runtime path)
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" 使用Vundle管理插件，必须
+Plugin 'gmarik/Vundle.vim'
+
+"
+" 其他插件
+"
+
+call vundle#end() " 必须
+filetype plugin indent on " 必须
+```
+
+最后，你只需要执行安装命令，即可以安装好所需的插件。
+
+```
+# 在vim中
+:PluginInstall
+
+# 在终端
+vim +PluginInstall +qall
+```
+
+下面列出我的Vim插件和配置
+
+```
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Define bundles via Github repos
+Bundle 'christoomey/vim-run-interactive'
+Bundle 'croaky/vim-colors-github'
+Bundle 'danro/rename.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp.vim'
+Bundle 'pbrisbin/vim-mkdir'
+Bundle 'scrooloose/syntastic'
+Bundle 'slim-template/vim-slim'
+Bundle 'thoughtbot/vim-rspec'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'vim-scripts/tComment'
+Bundle "mattn/emmet-vim"
+Bundle "scrooloose/nerdtree"
+Bundle "Lokaltog/vim-powerline"
+Bundle "godlygeek/tabular"
+Bundle "msanders/snipmate.vim"
+Bundle "jelera/vim-javascript-syntax"
+Bundle "altercation/vim-colors-solarized"
+Bundle "othree/html5.vim"
+Bundle "xsbeats/vim-blade"
+Bundle "Raimondi/delimitMate"
+Bundle "groenewege/vim-less"
+Bundle "evanmiller/nginx-vim-syntax"
+Bundle "Lokaltog/vim-easymotion"
+Bundle "tomasr/molokai"
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+filetype on
+```
+
 
 

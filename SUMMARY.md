@@ -4,6 +4,7 @@
 * [System](system.md)
   * [MacOSX](system/macosx.md)
     * [VIM](system/macosx/vim.md)
+    * [Tree](system/macosx/tree.md)
   * [CentOS](system/centos.md)
   * [Ubuntu](system/ubuntu.md)
     * [UbuntuServer](system/ubuntu/ubuntuserver.md)
