@@ -1,5 +1,3 @@
-
-
 ```
 -------- File options ---------
   -q            Print non-printable characters as '?'.
@@ -15,7 +13,7 @@
   -F            Appends '/', '=', '*', '@', '|' or '>' as per ls -F.
   --inodes      Print inode number of each file.
   --device      Print device ID number to which each file belongs.
-  
+
     ------- Sorting options -------
   -v            Sort files alphanumerically by version.
   -t            Sort files by last modification time.
@@ -24,25 +22,29 @@
   -r            Reverse the order of the sort.
   --dirsfirst   List directories before files (-U disables).
   --sort X      Select sort: name,version,size,mtime,ctime.
-  
+
   ------- Graphics options ------
   -i            Don't print indentation lines.
   -A            Print ANSI lines graphic indentation lines.
   -S            Print with CP437 (console) graphics indentation lines.
   -n            Turn colorization off always (-C overrides).
   -C            Turn colorization on always.
-  
+
   ------- XML/HTML/JSON options -------
   -X            Prints out an XML representation of the tree.
   -J            Prints out an JSON representation of the tree.
   -H baseHREF   Prints out HTML format with baseHREF as top directory.
   -T string     Replace the default HTML title and H1 header with string.
   --nolinks     Turn off hyperlinks in HTML output.
-  
+
   ---- Miscellaneous options ----
   --version     Print version and exit.
   --help        Print usage and this help message and exit.
   --            Options processing terminator.
+```
+
+```
+tree -v -L 1 --charset utf-8 > backup-whateverfolder-$(date +%Y-%m-%d).txt
 ```
 
 
