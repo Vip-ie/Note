@@ -104,5 +104,6 @@
   * [SublimeText](tools/sublimetext.md)
   * [Deploy](tools/deploy.md)
   * [Natapp](tools/natapp.md)
+  * [Pip](tools/pip.md)
 * [项目](xiang-mu.md)
 
