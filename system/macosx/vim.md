@@ -15,6 +15,12 @@ brew uninstall ${formula} # 按名称卸载
 brew pin/unpin ${formula} # 锁定或者解锁软件包版本，防止误升级
 ```
 
+### VIM快捷键
+
+**SHIFT+G**  移动到行末尾
+
+
+
 ### zsh，好用的shell
 
 Shell程序就是Linux/UNIX系统中的一层外壳，几乎所有的应用程序都可以运行在Shell环境 下，常用的有bash, csh, zcsh等。在
