@@ -98,7 +98,7 @@
   * [Tornado框架](python/tornadokuang-jia.md)
   * [Tornado项目](python/tornadoxiang-mu.md)
   * [Django框架](python/djangokuang-jia.md)
-    * CreateApp
+    * [CreateApp](python/djangokuang-jia/createapp.md)
     * [Routing](python/djangokuang-jia/routing.md)
   * [Django项目](python/djangoxiang-mu.md)
 * [Tools](tools.md)
