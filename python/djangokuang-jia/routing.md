@@ -13,7 +13,7 @@ URL（Uniform Resoure Locator）统一资源定位符是对可以从互联网上
 
 ## URL格式
 
-* **http://127.0.0.1:8000/hello/**
+* [http://127.0.0.1:8000/hello/](http://127.0.0.1:8000/hello/)
 * **URL解释：**
 * **schema://host\[:port\#\]/path/..\[?query-string\]\[\#anchor\]**
 * **schema:指定使用的协议（例如：http，https，ftp）**
@@ -43,7 +43,7 @@ urlpatterns = [
 ]
 ```
 
-2. 在项目目录创建了一个views.py文件
+1. 在项目目录创建了一个views.py文件
 
 ```
 from django.http import HttpResponse
@@ -53,6 +53,17 @@ def test(request):
 
 def test2(request):
     return HttpResponse('hello python')
+```
+
+## path基本规则
+
+```
+使用尖括号（<>）从url中捕获值。
+包含一个转化器类型（converter type）没有转化器，将匹配任何字符串，当然也包括了/字符。
+            ↓
+path('test/<xx>/',views.test)
+                      ↑　
+当前面的url匹配成功后就会调用后面的是视图函数。
 ```
 
 
