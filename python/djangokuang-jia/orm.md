@@ -168,7 +168,7 @@ def add_user(request):
     # budong.save()
     #第三种方法
     # User.objects.create(name='leva',age=18)
-    #第四种方法 添加数据会判断数据是否存在，若存在不添加，做不存在就添加
+    #第四种方法 添加数据会判断数据是否存在，若存在不添加，不存在就添加
     #User.objects.get_or_create(name='vip',age=19)
 
     return HttpResponse('数据添加成功')
@@ -178,7 +178,7 @@ def search_user(request):
     #查询所有记录
     # rs =User.objects.all()
     #查询满足条件
-    # rs = User.objects.filter(name='zlk')
+    # rs = User.objects.filter(name='zlk',age=18)
     # print(rs[2]) #一个模型的实例，数据表的一条数据
     #查询某一个记录，返回一个对象
     #rs = User.objects.get(id=3) #一个实例对象
