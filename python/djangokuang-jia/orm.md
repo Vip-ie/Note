@@ -199,6 +199,7 @@ def update_user(request):
 #删除数据
 def delete_user(request):
     #User.objects.get(id=4).delete()
+    #注意：get返回的对象具有唯一性质，如果符合条件的对象有多个，则get报错！
     return HttpResponse('数据删除成功')
 ```
 
