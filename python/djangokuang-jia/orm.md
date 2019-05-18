@@ -175,9 +175,13 @@ def add_user(request):
 
 #查询数据
 def search_user(request):
+    #查询所有记录
     # rs =User.objects.all()
+    #查询满足条件
     # rs = User.objects.filter(name='zlk')
-    # print(rs[2])
+    # print(rs[2]) #一个模型的实例，数据表的一条数据
+    #查询某一个记录，返回一个对象
+    #rs = User.objects.get(id=3) #一个实例对象
     return HttpResponse('查询添加成功')
 
 #更新数据
