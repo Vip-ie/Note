@@ -142,5 +142,63 @@ if query is not None:
 return query
 ```
 
+---
+
+## **增删改查**
+
+在views.py文件内执行增删改查
+
+**增加或插入数据**
+
+```
+from django.http import HttpResponse
+
+from .models import User
+
+
+#增加数据
+def add_user(request):
+    #第一种方法
+    # taka = User(name='zlk', age = 18)
+    # taka.save()
+    #第二种方法
+    # budong = User()
+    # budong.name = 'budong'
+    # budong.age = 18
+    # budong.save()
+    #第三种方法
+    # User.objects.create(name='leva',age=18)
+    #第四种方法 添加数据会判断数据是否存在，若存在不添加，做不存在就添加
+    #User.objects.get_or_create(name='vip',age=19)
+
+    return HttpResponse('数据添加成功')
+    
+#查询数据
+def search_user(request):
+    # rs =User.objects.all()
+    # rs = User.objects.filter(name='zlk')
+    # print(rs[2])
+    return HttpResponse('查询添加成功')
+
+#更新数据
+def update_user(request):
+    #第一种方法
+    # rs = User.objects.get(id=3)
+    # rs.name = 'ali'
+    # rs.save()
+    # print(rs)
+    #第二种更新
+    # User.objects.filter(name='ali').update(name='zlkvip')
+    # User.objects.all().update(city='beijing')
+
+    return HttpResponse('数据更新成功')
+#删除数据
+def delete_user(request):
+    #User.objects.get(id=4).delete()
+    return HttpResponse('数据删除成功')
+```
+
+
+
 
 
