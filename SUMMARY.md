@@ -100,7 +100,7 @@
   * [Django框架](python/djangokuang-jia.md)
     * [CreateApp](python/djangokuang-jia/createapp.md)
     * [Routing](python/djangokuang-jia/routing.md)
-    * Templates
+    * [Templates](python/djangokuang-jia/templates.md)
     * [ORM](python/djangokuang-jia/orm.md)
   * [Django项目](python/djangoxiang-mu.md)
 * [Tools](tools.md)

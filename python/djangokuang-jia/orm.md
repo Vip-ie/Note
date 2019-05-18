@@ -94,5 +94,53 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
+---
+
+## Django2.2版本以上配置需要安装以下包
+
+Pillow 必须安装
+
+**报以下错误处理方法**
+
+```
+django2.2/mysql ImproperlyConfigured: mysqlclient 1.3.13 or newer is required; you have 0.9.3
+```
+
+#### 解决方法
+
+Django连接MySQL时默认使用MySQLdb驱动，但MySQLdb不支持Python3，因此这里将MySQL驱动设置为pymysql，使用 pip install pymysql 进行安装，然后在工程文件\_\_init\_\_.py添加以下代码即可。
+
+**仍使用django 2.2版本**
+
+```
+#找到Python环境下 django包，并进入到backends下的mysql文件夹
+cd /opt/anaconda3/envs/envAGC_Mini/lib/python3.6/site-packages/django/db/backends/mysql
+#文件列表如下
+
+找到base.py文件，注释掉 base.py 中如下部分（35/36行）
+if version < (1, 3, 3):
+     raise ImproperlyConfigured("mysqlclient 1.3.3 or newer is required; you have %s" % Database.__version__)
+```
+
+**此时仍会会报错，报错信息如下**
+
+```
+AttributeError: ‘str’ object has no attribute ‘decode’
+```
+
+#### 解决办法
+
+```
+#找到operations.py文件（46行），将decode改为encode
+#linux vim 查找快捷键：？decode
+if query is not None:
+    query = query.decode(errors='replace')
+return query
+#改为
+if query is not None:
+    query = query.encode(errors='replace')
+return query
+```
+
 
 
