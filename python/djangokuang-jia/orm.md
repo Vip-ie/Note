@@ -1,3 +1,8 @@
+
+---
+
+---
+
 # Django ORM
 
 * **Django的ORM简介**
@@ -37,6 +42,8 @@ DATABASES = {
         'PASSWORD': 'Root110qwe',              # 链接数据库的密码
         'HOST': '127.0.0.1',                   # mysql服务器的域名和ip地址
         'PORT': '3306',                        # mysql的一个端口号,默认是3306
+        }
+    }
 ```
 
 ## pymsql**数据库连接器的配置**
@@ -69,6 +76,22 @@ class User(models.Model):
     id = models.AutoField(primary_key=True) #主键可以省略，django会自动给我们加上
     name =models.CharField(max_length=30)
     age = models.ImageField()
+```
+
+---
+
+## 将模型类映射到数据库
+
+1. **首先执行下命令，要创建映射文件**
+
+```
+python manage.py makemigrations
+```
+
+**  2. 执行以下命令，将映射文件中的映射数据提交到数据库中 **
+
+```
+python manage.py migrate
 ```
 
 
