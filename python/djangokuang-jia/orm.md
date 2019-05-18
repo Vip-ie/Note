@@ -172,7 +172,7 @@ def add_user(request):
     #User.objects.get_or_create(name='vip',age=19)
 
     return HttpResponse('数据添加成功')
-    
+
 #查询数据
 def search_user(request):
     # rs =User.objects.all()
@@ -197,8 +197,6 @@ def delete_user(request):
     #User.objects.get(id=4).delete()
     return HttpResponse('数据删除成功')
 ```
-
-
 
 
 
