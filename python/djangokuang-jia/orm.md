@@ -39,5 +39,37 @@ DATABASES = {
         'PORT': '3306',                        # mysql的一个端口号,默认是3306
 ```
 
+## pymsql**数据库连接器的配置**
+
+**在虚拟环境中安装pymysql**
+
+```
+pip install pymysql
+```
+
+**设置连接器为pymysql**
+
+在主目录下的的\_\_init\_\_.py文件添加下面两句
+
+```
+import pymysql
+pymysql.install_as_MySQLdb()
+```
+
+---
+
+## 使用Django中的模型
+
+**在app下面的models.py中创建django模型类**
+
+```
+from django.db import models
+
+class User(models.Model):
+    id = models.AutoField(primary_key=True) #主键可以省略，django会自动给我们加上
+    name =models.CharField(max_length=30)
+    age = models.ImageField()
+```
+
 
 
