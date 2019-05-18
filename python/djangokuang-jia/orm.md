@@ -177,7 +177,11 @@ def add_user(request):
 def search_user(request):
     #查询所有记录
     # rs =User.objects.all()
-    #查询满足条件
+    #获取第一条数据
+    # rs =User.objects.first()
+    #获取最后一条数据
+    # rs = User.objects.last()
+    #根据参数提供的条件过滤后的记录
     # rs = User.objects.filter(name='zlk',age=18)
     #注意：filter（**kwargs）方法：根据参数提供的提取条件，获取一个过滤后的QuerySet。
     # print(rs[2]) #一个模型的实例，数据表的一条数据
