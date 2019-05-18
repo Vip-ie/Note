@@ -179,6 +179,7 @@ def search_user(request):
     # rs =User.objects.all()
     #查询满足条件
     # rs = User.objects.filter(name='zlk',age=18)
+    #注意：filter（**kwargs）方法：根据参数提供的提取条件，获取一个过滤后的QuerySet。
     # print(rs[2]) #一个模型的实例，数据表的一条数据
     #查询某一个记录，返回一个对象
     #rs = User.objects.get(id=3) #一个实例对象
