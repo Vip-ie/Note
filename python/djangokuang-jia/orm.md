@@ -75,7 +75,7 @@ from django.db import models
 class User(models.Model):
     id = models.AutoField(primary_key=True) #主键可以省略，django会自动给我们加上
     name =models.CharField(max_length=30)
-    age = models.ImageField()
+    age = models.IntegerField()
 ```
 
 ---
