@@ -125,5 +125,7 @@ def add_user(request):
 * **DateField.auto\_now:每次修改都会将当前时间更新进去，只有调用，QuerySet.update方法将不会调用。这个参数只是Date和DateTime以及TimModel.save\(\)方法才会调用e类才有的。**
 * **DateField.auto\_now\_add:第一次添加进去，都会将当前时间设置进去。以后修改，不会修改这个值**
 
+## 表关系的实现
 
+![](/assets/orm02.png)
 
