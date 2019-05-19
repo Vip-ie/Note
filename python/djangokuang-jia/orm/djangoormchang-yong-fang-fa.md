@@ -95,7 +95,6 @@ def add_user(request):
     rs = User.objects.filter(city__isnull=True)
 
     return HttpResponse("查询所有信息")
-
 ```
 
 ## **常用的字段类型映射关系**
@@ -106,6 +105,25 @@ def add_user(request):
 | longtext | TextField |
 | date | DateField |
 | datetime | DateTimeField |
+
+## **常用的字段类型**
+
+1. **IntegerField :整型，映射到数据库中的int类型。**
+2. **CharField:字符类型，映射到数据库中的varchar类型，通过max\_length指定最大长度。**
+3. **TextField:文本类型，映射到数据库中的text类型。**
+4. **BooleanField:布尔类型，映射到数据库中的tinyint类型，在使用的时候，传递True/False进去。如果要可以为空，则用NullBooleanField。**
+5. **DateField:日期类型，没有时间。映射到数据库中是date类型，在使用的时候，可以设置DateField.auto\_now每次保存对象时，自动设置该字段为当前时间。设置DateField.auto\_now\_add当对象第一次被创建时自动设置当前时间。**
+6. **DateTimeField: 日期时间类型。映射到数据库中的是datetime类型，在使用的时候，传递datetime.datetime\(\)进去。**
+
+## Field**的常用参数**
+
+* **primary\_key:指定是否为主键。**
+* **unique:指定是否唯一。**
+* **null:指定是否为空，默认为False。**
+* **blank:等于True时form表单验证时可以为空，默认为False。**
+* **default:设置默认值。**
+* **DateField.auto\_now:每次修改都会将当前时间更新进去，只有调用，QuerySet.update方法将不会调用。这个参数只是Date和DateTime以及TimModel.save\(\)方法才会调用e类才有的。**
+* **DateField.auto\_now\_add:第一次添加进去，都会将当前时间设置进去。以后修改，不会修改这个值**
 
 
 
