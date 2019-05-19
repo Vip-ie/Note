@@ -91,6 +91,7 @@ python manage.py makemigrations
 **  2. 执行以下命令，将映射文件中的映射数据提交到数据库中 **
 
 ```
+可以跟app目录执行
 python manage.py migrate
 ```
 
