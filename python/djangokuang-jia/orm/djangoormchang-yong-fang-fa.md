@@ -28,10 +28,10 @@ def add_user(request):
 
 #对结果排序order_by
     rs = User.objects.order_by('age')
-    
+
 #多项排序
     rs = User.objects.order_by('age', 'id')
-    
+
 #逆向拍讯
     rs = User.objects.order_by（'-age'）
     #将返回来的QuerySet中Model转换为字典
@@ -41,6 +41,24 @@ def add_user(request):
 
 #获取当前查询到的数据的总数
     rs = User.objcets.count()
+
+    return HttpResponse("查询所有信息")
+```
+
+## **常用的查询条件**
+
+```py
+from django.http import HttpResponse
+from .models import User
+
+def add_user(request):
+
+#exact相当于等于号
+    rs = User.objects.filter(name__exact='xiaoming')
+
+#contains 包含
+    rs = User.objects.fileter(name__contains='xiao')
+    
     
     return HttpResponse("查询所有信息")
 ```
