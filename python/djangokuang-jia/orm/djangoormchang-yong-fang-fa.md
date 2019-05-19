@@ -127,5 +127,11 @@ def add_user(request):
 
 ## 表关系的实现
 
-![](/assets/orm02.png)
+## ![](/assets/orm02.png)创建表模型
+
+```
+
+```
+
+
 
