@@ -103,7 +103,7 @@
     * [Templates](python/djangokuang-jia/templates.md)
     * [ORM](python/djangokuang-jia/orm.md)
       * [DjangoOrm常用方法](python/djangokuang-jia/orm/djangoormchang-yong-fang-fa.md)
-      * [添加查询删除数据](python/djangokuang-jia/orm/djangoormchang-yong-fang-fa/tian-jia-cha-xun-shan-chu-shu-ju.md)
+      * [添加查询删除](python/djangokuang-jia/orm/tian-jia-cha-xun-shan-chu.md)
   * [Django项目](python/djangoxiang-mu.md)
 * [Tools](tools.md)
   * [Pycharm\_and\_Git](tools/pycharmand-git.md)
