@@ -18,5 +18,90 @@ def add_user(request):
     return HttpResponse('数据添加成功')
 ```
 
+## 一对多
+
+**查询**
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
+## 一对一 
+
+**查询**
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
+## 一对多
+
+**数据添加 .add\(\) 添加已经存在的数据**
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
+**新建数据 .create\(\)**
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
+**.remove  一对多的删除，必须保证外键列允许为空**
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
+## 多对多
+
+**添加数据**
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
+多表查询
+
+```py
+from django.http import HttpResponse
+from .models import Department,Student,Course,Stu_detail
+
+def add_user(request):
+
+    return HttpResponse('数据添加成功')
+```
+
 
 
