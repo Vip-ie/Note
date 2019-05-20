@@ -31,7 +31,7 @@ def add_user(request):
     return HttpResponse('数据添加成功')
 ```
 
-## 一对一 
+## 一对一
 
 **查询**
 
@@ -92,7 +92,7 @@ def add_user(request):
     return HttpResponse('数据添加成功')
 ```
 
-多表查询
+**多表查询**
 
 ```py
 from django.http import HttpResponse
